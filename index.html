@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            
+
+        }
+    h1{
+        font-size:80px;
+        color:red;
+    }
+    #jangir{
+        color:green;
+        display: block;
+        border:2px solid white;
+        animation-name: Sumeet;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+   
+    .colorPink{
+        color:red;
+        font-size: 5px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .jangir{
+        color:white;
+        font-size:200px;
+        text-shadow: 2px 5px 10px blue, 3px 8px 50px red, 5px 7px 20px  green,8px 10px 10px yellow;
+       
+       
+        
+    }
+     @keyframes Sumeet {
+        0%{
+            color:red;
+            font-size:50px;
+        }
+        30%{
+            color:aqua;
+            font-size: 100px;
+            float: right;
+        }
+        50%{
+            color:green;
+            font-size:120px;
+            float:left;
+            text-shadow: 20px 20px 50px red; 
+        }
+        60%{
+            color:wheat;
+            font-size:150px;
+            float: right;
+        }
+        70%{
+            color: black;
+            font-size:160px;
+            float:left;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border:15px solid blue;
+        }
+        80%{
+            color:white;
+            font-size:180px;
+            float:right;
+            border:20px solid red;
+
+        }
+        100%{
+            color:blue;
+            float:left;
+            
+        }
+     }
+    #car{
+        width: 200px;
+    }
+   </style>
+  
+</head>
+<body>
+   
+    <h3 class="colorPink">This is sumeet kumar <span class="jangir">jangir</span></h3>
+    <h1  class="colorPink" id="jangir" onclick="changeValue()">Hi</h1>
+    <img src="car.jpg" width="200px" onclick="changeCarWidth()">
+
+
+   <marquee behavior="alternate" scrollamount="50">Sumeet <marquee behavior="alternate" scrollamount="50"><img src="car.jpg" width="250"  alt="" srcset="">Kumar</marquee> Jangir</marquee>
+   
+   <MarqUEE behavior="alternate" direction="right">Sumeet</MarqUEE>
+   <marquee behavior="scroll" direction="right" scrollamount="1000" scrolldelay="5000">Sumeet<marquee direction="up" height="500" behavior="alternate"><img src="car.jpg" onclick="changeCarWidth()" id="car"  /></marquee></marquee>
+
+
+  <p>Yogesh</p>
+   <h1>Jangir</h1>
+   <script>
+    //console.log("Hello");
+    //console.log("Hi \n How are you");
+
+    var x = 533;
+    //let y = 6;
+    const z = 7;
+     
+    function Hello()
+    {
+        console.log("Sumeet Kumar Janigr");
+    }
+    
+   console.log (document.getElementById("jangir").innerHTML);
+
+   function changeValue(){
+    document.getElementById("jangir").innerHTML = 'hello this ';
+   }
+   var x = 5;
+   var y = 250;
+
+    function changeCarWidth(){
+    
+  document.getElementById("car").style.width= y + "px"; 
+  y = y+ x;
+  x++;
+
+    }
+
+
+    </script>
+
+
+</body>
+</html>
